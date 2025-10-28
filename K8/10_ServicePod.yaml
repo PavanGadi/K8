@@ -9,5 +9,5 @@ metadata:
     environment: dev
 spec:
   containers:
-  - name: nginix
-    image: nginix
+  - name: nginx
+    image: nginx
