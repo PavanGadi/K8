@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: config_pod
+spec:
+  containers:
+  - name: nginix
+    image: nginix
+    envfrom:
+    - configMapRef:
+        name: configmap       # We should give the name that we have given in the configmap
+  # env:                      #  Also we can write each value for config map, but if there are more values code length will increase.
+  # - name: course            # We can give any value in the name field.
+  #   valueFrom:               
+  #     configMapKeyRef:
+  #       name: daws78s
+  #       key: course
+  # - name: trainer
+  #   valueFrom:
+  #     configMapKeyRef:
+  #       name: daws78s
+  #       key: trainer

@@ -1,0 +1,13 @@
+apiVerision: v1
+kind: Pod
+metadata:
+  name: service_pod
+  labels:
+    name: frontend
+    project: expense
+    component: frontend
+    environment: dev
+spec:
+  containers:
+  - name: nginix
+    image: nginix
