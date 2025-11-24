@@ -1,0 +1,16 @@
+apiVerision: v1
+kind: Service
+metadata:
+  name: lb_pod
+spec:
+  type: LoadBalancer
+  selector:
+    name: frontend
+    project: expense
+    component: frontend
+    environment: dev
+  ports:
+  - protocol: tcp
+    port: 80        #service-port
+    targetPort: 80  #target-port
+    nodePort: 32761

@@ -1,0 +1,10 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: expense
+  labels:
+    name: expense
+    environment: dev
+
+# kubectl apply -f namespace.yml
+# kubectl apply -f namespace.yml

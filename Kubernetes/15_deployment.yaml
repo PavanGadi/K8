@@ -2,6 +2,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: nginx
+  namespace: practice
   # these labels are deployment related labels
   labels:
     app: nginx
@@ -32,6 +33,7 @@ kind: Service
 metadata:
   name: nginx
 spec:
+  type: LoadBalancer
   selector:
     app: nginx
     tier: web
@@ -40,3 +42,8 @@ spec:
   - protocol: TCP
     port: 80 #service-port
     targetPort: 80 #target-port
+
+
+# 2645727
+
+# WTTxjhUIuoZ9fvRgkqOB
