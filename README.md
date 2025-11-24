@@ -1,1 +1,1 @@
-This repo has the Devops related files
+This repo has all the DevOps-related files
