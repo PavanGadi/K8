@@ -22,7 +22,7 @@ spec:
         app: nginx
         tier: web
         project: test-project
-        extra-key: extra-value
+        extra-key: extra-value    # This is opitional we can give or remove it. But the labels should match
     spec:
       containers:
       - name: nginx
