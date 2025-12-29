@@ -4,6 +4,7 @@ resource "aws_instance" "db" {
     vpc_security_group_ids = [ aws_security_group.allow_ssh.id ]
     # In the above line we are giving id at the because of this AWS will create the SG first then it will take
     # the SG id and pass it to the above line.
+    instance_type = "t3.micro"
 
     tags = {
       name = "db"
