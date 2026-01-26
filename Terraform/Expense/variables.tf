@@ -40,3 +40,11 @@ variable "allowed_cidr" {
     type = list(string)
     default = ["0.0.0.0/0"]
 }
+
+variable "zone_id" {
+    default = "Z0841985K37TL1E8WGNQ"
+}
+
+variable "domain_name" {
+    default = "devopspractice.biz"  
+}
